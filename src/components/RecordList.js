@@ -1,15 +1,15 @@
 import React from 'react';
 import Record from './Record';
 
-const RecordList = () => {
-    return ( 
+const RecordList = ({ records }) => {
+    const recordNodes = records.map((record) => {
+        return <Record key={record.id} records={record} />
+    })
+    return (  
         <>
-        <h3>Record List</h3>
-        <ul>
-            <Record />
-        </ul>
+        {recordNodes}
         </>
-     );
+    );
 }
  
 export default RecordList;

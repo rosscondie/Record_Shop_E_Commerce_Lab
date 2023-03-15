@@ -1,9 +1,15 @@
 import React from 'react';
+import Button from './Button';
 
-const Record = () => {
+const Record = ({ records  }) => {
     return ( 
         <>
-        <p>Record Details</p>
+        <p>Records</p>
+        <p>Artist: {records.artistName}</p>
+        <p>Album: {records.albumName}</p>
+        <p>Price: £{records.albumCost}</p>
+        <Button />
+    
         </>
      );
 }
