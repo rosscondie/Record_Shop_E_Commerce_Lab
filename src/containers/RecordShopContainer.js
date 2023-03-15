@@ -3,8 +3,8 @@ import AddToBasket from '../components/AddToBasket';
 import RecordList from "../components/RecordList";
 
 
-const RecordShopContainer = () => {
-    const [baskets, setBaskets] = useState([])
+const RecordShopContainer = ({baskets, setBaskets}) => {
+    
     const [records, setRecords] = useState([
         { id: 1, artistName: "The Beatles", albumName: "Norwegian Wood", albumCost: 7 },
         { id: 2, artistName: "AC/DC", albumName: "Back in Black", albumCost: 8 },
@@ -19,7 +19,7 @@ const RecordShopContainer = () => {
     return ( 
         <>
         <h2>Record Shop</h2>
-        <AddToBasket baskets={baskets} />
+    
         <RecordList records={records} baskets={baskets} setBaskets={setBaskets} />
         </>
      );

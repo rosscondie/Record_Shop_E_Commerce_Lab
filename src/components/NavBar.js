@@ -12,6 +12,9 @@ const NavBar = () => {
                 <li>
                     <Link to="/records">Records</Link>
                 </li>
+                <li>
+                    <Link to="/basket">Basket</Link>
+                </li>
             </ul>
         </nav>
 
