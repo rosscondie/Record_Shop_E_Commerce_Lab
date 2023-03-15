@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import AddToBasket from '../components/AddToBasket';
 import RecordList from "../components/RecordList";
 
 

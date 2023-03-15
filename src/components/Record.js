@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Record = ({ records, baskets, setBaskets  }) => {
-
+    
     const [isBasket, setIsBasket] = useState(false);
 
     function handleClick(){
@@ -19,7 +19,11 @@ const Record = ({ records, baskets, setBaskets  }) => {
         <p>Artist: {records.artistName}</p>
         <p>Album: {records.albumName}</p>
         <p>Price: £{records.albumCost}</p>
+        {!isBasket ? 
         <button onClick={handleClick}>Add to basket</button>
+        :
+        <button onClick={handleClick}>Remove from basket</button>
+    }
         </>
      );
 }
