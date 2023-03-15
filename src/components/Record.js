@@ -20,7 +20,6 @@ const Record = ({ records, baskets, setBaskets  }) => {
         <p>Album: {records.albumName}</p>
         <p>Price: £{records.albumCost}</p>
         <button onClick={handleClick}>Add to basket</button>
-    
         </>
      );
 }
